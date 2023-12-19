@@ -98,6 +98,7 @@ public class GatewayMvcPropertiesBeanDefinitionRegistrar implements ImportBeanDe
 
 	@Override
 	public void registerBeanDefinitions(AnnotationMetadata importingClassMetadata, BeanDefinitionRegistry registry) {
+		System.out.println("this should not run");
 		// registers a RouterFunctionHolder that specifically isn't a RouterFunction since
 		// RouterFunctionMapping gets a list of RouterFunction and if you put
 		// RouterFunction in refresh scope, RouterFunctionMapping will end up with two.

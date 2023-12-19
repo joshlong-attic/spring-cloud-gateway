@@ -54,7 +54,7 @@ import org.springframework.web.client.RestClient;
 
 @AutoConfiguration(after = { RestTemplateAutoConfiguration.class, RestClientAutoConfiguration.class })
 @ConditionalOnProperty(name = "spring.cloud.gateway.mvc.enabled", matchIfMissing = true)
-@Import(GatewayMvcPropertiesBeanDefinitionRegistrar.class)
+// @Import(GatewayMvcPropertiesBeanDefinitionRegistrar.class)
 public class GatewayServerMvcAutoConfiguration {
 
 	@Bean
